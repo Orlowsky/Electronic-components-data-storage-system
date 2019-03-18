@@ -1,5 +1,6 @@
 # Electronic-components-data-storage-system
 Engineer Degree CodeBase
+-------------------------------------------------------
 Whole adnotation in Project in Polish
 -------------------------------------------------------
 Spis Plików
