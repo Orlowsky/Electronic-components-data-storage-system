@@ -1,0 +1,736 @@
+2017-04-12 10:34:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 10:40:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Błąd składniowy w wyrażeniu SQL "UPDATE Magazyn SET ilosc = '30000 WHERE reel_id = 'CNJQUATPVNWN[*]'"
+Syntax error in SQL statement "UPDATE Magazyn SET ilosc = '30000 WHERE reel_id = 'CNJQUATPVNWN[*]'"; SQL statement:
+UPDATE Magazyn SET ilosc = '30000 WHERE reel_id = 'CNJQUATPVNWN' [42000-193]
+2017-04-12 10:41:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Błąd składniowy w wyrażeniu SQL "UPDATE Magazyn SET ilosc = '10 WHERE reel_id = 'CNJQUATPVNWN[*]'"
+Syntax error in SQL statement "UPDATE Magazyn SET ilosc = '10 WHERE reel_id = 'CNJQUATPVNWN[*]'"; SQL statement:
+UPDATE Magazyn SET ilosc = '10 WHERE reel_id = 'CNJQUATPVNWN' [42000-193]
+2017-04-12 10:44:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 10:48:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 10:49:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:03:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:03:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:03:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Dane nie są dostępne
+No data is available [2000-193]
+2017-04-12 14:13:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:21:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:22:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:26:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Dane nie są dostępne
+No data is available [2000-193]
+2017-04-12 14:27:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 14:27:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Dane nie są dostępne
+No data is available [2000-193]
+2017-04-12 14:31:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-12 15:40:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 16:49:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 16:53:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 17:53:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 17:53:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+SELECT * FROM Elementy [42102-193]
+2017-04-17 17:53:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Obiekt jest zamknięty
+The object is already closed [90007-193]
+2017-04-17 17:54:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+SELECT * FROM Elementy WHERE MPN_id = 'gfdfgertergdf' [42102-193]
+2017-04-17 17:58:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 17:58:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+SELECT * FROM Elementy [42102-193]
+2017-04-17 17:58:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Obiekt jest zamknięty
+The object is already closed [90007-193]
+2017-04-17 17:59:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+SELECT * FROM Elementy WHERE MPN_id = 'sdgdsgdg' [42102-193]
+2017-04-17 17:59:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+INSERT INTO Elementy VALUES ('sdgdsgdg','100n/50v/x7r/0603') [42102-193]
+2017-04-17 17:59:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" nie istnieje
+Table "ELEMENTY" not found; SQL statement:
+SELECT * FROM Elementy [42102-193]
+2017-04-17 17:59:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Obiekt jest zamknięty
+The object is already closed [90007-193]
+2017-04-17 18:01:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:33:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:33:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:41:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:41:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:42:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:42:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:43:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:43:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:46:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:46:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:50:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:50:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:53:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:53:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:56:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:56:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 18:59:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 18:59:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:02:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:02:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:04:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:04:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:05:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:05:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:08:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:08:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:11:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:11:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:13:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:13:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:15:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:15:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:17:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:17:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:18:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:18:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:19:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:19:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:21:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:21:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:23:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:23:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:27:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:27:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:37:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:37:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:38:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:38:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:39:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:39:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:42:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:42:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:42:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:42:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:44:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:44:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:45:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:45:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:46:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:46:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:49:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:49:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:53:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:53:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:58:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 19:58:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 19:59:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Dane nie są dostępne
+No data is available [2000-193]
+2017-04-17 20:01:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:01:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:04:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:04:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:15:59 database: flush
+org.h2.message.DbException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:379)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:362)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at magazyn.Baza.utworzPolaczenie(Baza.java:42)
+	at magazyn.Magazyn.main(Magazyn.java:257)
+Caused by: org.h2.jdbc.JdbcSQLException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	... 20 more
+2017-04-17 20:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:18:55 database: flush
+org.h2.message.DbException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]" [50000-193]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:379)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:362)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at magazyn.Baza.utworzPolaczenie(Baza.java:42)
+	at magazyn.Magazyn.main(Magazyn.java:257)
+Caused by: org.h2.jdbc.JdbcSQLException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]" [50000-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/User/Desktop/Baza.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	... 20 more
+2017-04-17 20:19:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:19:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:24:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:24:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:32:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:32:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:33:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:33:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:34:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:34:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-17 20:36:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-17 20:36:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-21 12:30:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-21 12:30:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-21 12:43:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Kolumna "LQEFXXRLWLPN" nie istnieje
+Column "LQEFXXRLWLPN" not found; SQL statement:
+SELECT * FROM Magazyn WHERE LQEFXXRLWLPN = 'dasd' [42122-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:178)
+	at org.h2.command.dml.Select.prepare(Select.java:856)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:73)
+	at magazyn.Baza.znajdzRolki(Baza.java:121)
+	at magazyn.Magazyn.main(Magazyn.java:295)
+2017-04-21 12:50:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-21 12:50:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-21 17:14:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-21 17:14:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-21 18:15:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-21 18:15:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-22 15:11:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-22 15:11:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-22 15:12:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-22 15:12:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-22 15:26:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-22 15:26:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-22 18:35:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-22 18:35:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-23 17:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-23 17:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-23 17:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-23 17:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-24 04:46:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-24 04:46:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-24 05:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-24 05:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-24 11:29:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-24 11:29:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-24 11:40:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-24 11:40:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-27 01:40:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-27 01:40:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-04-27 01:50:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-04-27 01:50:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-05-08 15:11:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-05-08 15:11:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-05-08 15:29:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-05-08 15:29:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-05-08 15:31:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-05-08 15:31:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]
+2017-05-08 15:36:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "MAGAZYN" już istnieje
+Table "MAGAZYN" already exists; SQL statement:
+CREATE TABLE   MAGAZYN (reel_id VARCHAR(255) ,  lot_id VARCHAR(255),  MPN_id VARCHAR(255),  part_id VARCHAR(255),  ilosc INTEGER not NULL,  cust_order VARCHAR(255), komentarz VARCHAR(255), nr_polki INTEGER not NULL, PRIMARY KEY ( reel_id )) [42101-193]
+2017-05-08 15:36:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabela "ELEMENTY" już istnieje
+Table "ELEMENTY" already exists; SQL statement:
+CREATE TABLE   ELEMENTY (part_id VARCHAR(255) ,MPN_id VARCHAR(255) ,PRIMARY KEY (MPN_id)) [42101-193]

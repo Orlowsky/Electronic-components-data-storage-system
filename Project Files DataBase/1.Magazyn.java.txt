@@ -1,0 +1,362 @@
+﻿/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package magazyn;
+// biblioteki do  polecenia druku
+import java.awt.print.PageFormat;
+import java.awt.print.PrinterJob;
+// Kody kreskowe
+import net.sourceforge.barbecue.Barcode;
+import net.sourceforge.barbecue.BarcodeFactory;
+import net.sourceforge.barbecue.BarcodeImageHandler;
+//wpisywanie wartości do programu
+import java.io.File;
+import java.util.Scanner;
+// biblioteka sql dla baz danych
+import java.sql.*;
+//biblioteki do ustawien druku
+import javax.print.attribute.HashPrintRequestAttributeSet;
+import javax.print.attribute.PrintRequestAttributeSet;
+import javax.print.attribute.standard.MediaPrintableArea;
+
+/**
+ *
+ * @author User
+ */
+public class Magazyn {
+
+    static String kondensator;
+    static String rezystor;
+    static String filePath;
+    static int licz;
+    static String[] textLines;
+    static String a;
+    static String ran;
+    static int len;
+
+    static String generowanie(int len, String ran) {
+//random generate razem z zapamietaniem poprzednich
+        try {
+            char[] str = new char[12];
+
+            for (int i = 0; i < len; i++) {
+                str[i] = (char) (((int) (Math.random() * 26)) + (int) 'A');
+            }
+            ran = new String(str);
+            System.out.println(ran);
+            return ran;
+        } catch (Exception e) {
+            System.out.println("nie pykło generowanie randoma");
+            return "nie działa";
+        }
+    }
+
+    static void drukowanie() {
+        //PrinterJob jest obiektem który odpowiada za robienie poleceń wydruku i wywoływanie okna drukowania
+        PrinterJob printJob = PrinterJob.getPrinterJob();
+        //Tutaj określa się jaki obiekt będzie drukował
+        printJob.setPrintable(new Druk());
+        //printDialog zwraca true kiedy kliknie mu się ok
+        PrintRequestAttributeSet pras = new HashPrintRequestAttributeSet();
+
+        PageFormat pf = new PageFormat();
+        pf = printJob.pageDialog(pf);
+        if (printJob.printDialog()) {
+            try {
+                pf = printJob.validatePage(pf);
+                pras.add(new MediaPrintableArea((float) pf.getImageableX(), (float) pf.getImageableY(), ((float) pf.getImageableHeight() + 30), (float) pf.getImageableWidth(), 1000));
+                System.out.print(pf.getImageableX() + " " + pf.getImageableY() + " " + pf.getImageableHeight() + " " + pf.getImageableWidth() + " ");
+                //Tutaj wykonuje printa, którego nadpisujemy w klasie od obiektu który drukujemy
+                printJob.print(pras);
+            } catch (Exception e) {
+                //Jakby się coś popsuło to sypnie errorem
+                e.printStackTrace();
+            }
+        }
+    }
+
+    static void dodaj_parametry(String[] kondensator, String[] rezystor) {
+        // funkcja ma za zadanie stworzyć wartość dla part_id przekazywanie poprzez kondensator i rezystor 
+        // wartosci kondensator i rezystor zamienione na tabele bo są wtedy złożone i mogą przekazywać przez referencje. 
+        // nie mogły być typu prostego 
+
+        kondensator[0] = ".";
+        rezystor[0] = ".";
+        Boolean zgoda = true;
+        while (zgoda == true) {
+            System.out.println(" dodaj wartość");
+            Scanner odczyt1 = new Scanner(System.in);
+            String wart1 = odczyt1.nextLine(); // wartość
+            System.out.println(" dodaj symbol wartości lub naciśnij enter");
+            odczyt1 = new Scanner(System.in);
+            String wart2 = odczyt1.nextLine(); // jaka wartość (czy kondensator czy rezystor)
+            if (wart2.equals("n") || wart2.equals("p") || wart2.equals("u")) { //nadajemy wartosci part_id od kondensatora
+                System.out.println(" To jest kondensator");
+                System.out.println(" dodaj napięcie");
+                odczyt1 = new Scanner(System.in);
+                String wart3 = odczyt1.nextLine(); // wolt
+                System.out.println(" rodzaj dielektryka");
+                odczyt1 = new Scanner(System.in);
+                String wart4 = odczyt1.nextLine(); // dielektryk
+                System.out.println(" rozmiar rolki");
+                odczyt1 = new Scanner(System.in);
+                String wart5 = odczyt1.nextLine();  //rozmiar
+
+                kondensator[0] = wart1 + wart2 + "/" + wart3 + "V" + "/" + wart4 + "/" + wart5;
+                System.out.println(kondensator[0]);
+                rezystor[0] = ".";
+
+            } else if (wart2.equals("R") || wart2.equals("k") || wart2.equals("M")) { // nadajemy wartosci part_id od rezystora
+                System.out.println("To jest rezystor");
+                System.out.println("Podaj %");  // tolerancja
+                odczyt1 = new Scanner(System.in);
+                String wart3 = odczyt1.nextLine();
+                System.out.println("Rozmiar Rolki");
+                odczyt1 = new Scanner(System.in);// rozmiar rolki
+                String wart4 = odczyt1.nextLine();
+
+                rezystor[0] = wart1 + wart2 + "/" + wart3 + "%" + "/" + wart4;
+                System.out.println(rezystor[0]);
+                kondensator[0] = ".";
+            } else {
+                System.out.println("Inny element"); // dla innych elementów
+                rezystor[0] = wart1 + wart2;
+                System.out.println(rezystor[0]);
+                kondensator[0] = ".";
+            }
+            System.out.println("Czy wszystko się zgadza? 1 - TAK, 2 - NIE"); // potwierdzenie wpisanych danych
+            Scanner odczyt2 = new Scanner(System.in);
+            int spr = odczyt2.nextInt();
+            if (spr == 2) {
+                zgoda = true;
+            } else {
+                zgoda = false;
+            }
+
+        }
+
+    }
+
+    static void dodawanieElementu(Statement stmt) {   // dodaje nowy element do tabeli bazy danych MPN/Part_ID
+        System.out.println("Wpisywanie wartości MPN ");
+        Scanner odczyt = new Scanner(System.in);
+        String mpn = odczyt.nextLine();
+        ResultSet rs = Baza.znajdzelementy(stmt, mpn);
+        String part_id = new String();
+        try { // sprawdzamy czy element juz nie znajduje sie w bazie danych
+            if (rs.next()) {
+                System.out.println("Element już istnieje");
+            } else {
+                System.out.println("Wpisywanie Parametrów "); //wpisujemy parametry , nawiązanie do funkcji dodaj_parametry
+                String[] kondensator;
+                kondensator = new String[1];
+                String[] rezystor;
+                rezystor = new String[1];
+                dodaj_parametry(kondensator, rezystor);// może być wpisywanie lub generowanie na podstawie wpisania parametrów
+                try {
+                    if (kondensator[0].equals(".")) {
+                        part_id = rezystor[0]; 
+                    } else if (rezystor[0].equals(".")) {
+                        part_id = kondensator[0];
+                    }
+                } catch (Exception e) {
+                    System.out.println("nie wie co zrobić z parametrem ");
+                }
+                Baza.wstawelement(stmt, part_id, mpn);
+            }
+        } catch (Exception ee) {
+            ee.printStackTrace();
+        }
+    }
+
+    static Rolka dodawanie(int len, String ran, Statement stmt) {     // dodawanie do tabeli bazy danych Magazyn      
+        Rolka rolka = new Rolka();
+        System.out.println("Skanowanie lub wpisywanie Nr LOT elementu"); // wpisujemy wartosc lot, lub zczytujemy
+        Scanner odczyt = new Scanner(System.in);              
+        rolka.lot_id = odczyt.nextLine();
+        System.out.println("Wpisywanie wartości MPN ");    // wstawiamy wartość MPN zapisaną na rolce 
+        odczyt = new Scanner(System.in);
+        rolka.MPN_id = odczyt.nextLine();
+        ResultSet rs = Baza.znajdzelementy(stmt, rolka.MPN_id);  // wykonujemy sprawdzenie czy dany MPN_id znajduje się już w bazie
+        try {                                                  // gdy zostaje znaleziony, zostaje ustawiony rs  
+            if (rs.next()) {                              //zwracana jest jego wartość dla tej pozycji 
+                rolka.part_id = rs.getString("part_id"); //zczytanie wartosci z tabeli Elementow
+                System.out.println("Part ID pobrane z tabeli Elementy");
+            } else {
+                System.out.println("Wpisywanie Parametrów "); //wpisujemy parametry , nawiązanie do funkcji dodaj_parametry
+                String[] kondensator;   //ustawienie jako array przez co zmienna nie jest typu prostego
+                kondensator = new String[1];// co pozwala na globalne przekazywanie wartości
+                String[] rezystor;
+                rezystor = new String[1];
+                dodaj_parametry(kondensator, rezystor);   //  funkcja w której ręcznie wstawiamy wartości
+                try {
+                    if (kondensator[0].equals(".")) {     //jeśli "." to znaczy że druga zmienna została uzupełniona
+                        rolka.part_id = rezystor[0];      // przekazanie wartości do obiektu 
+                    } else if (rezystor[0].equals(".")) {
+                        rolka.part_id = kondensator[0];    // przekazanie wartości do obiektu 
+                    }
+                } catch (Exception e) {
+                    System.out.println("nie wie co zrobić z parametrem ");
+                }
+                Baza.wstawelement(stmt, rolka);   // wstawianie wartości MPN_id i przypisanej mu part_id jeśli nowe 
+            }
+        } catch (Exception ee) {
+            ee.printStackTrace(); //pokazuje błędy innego typu przy funkcji np brak tabeli elementów
+        }
+        System.out.println("Wpisywanie ilości elementów ");  // wpisujemy ilość elementów w celu ogarnięcia układu 
+        odczyt = new Scanner(System.in);
+        rolka.qt = odczyt.nextInt();
+        System.out.println("Wpisanie nr zamówienia (Cust. Order "); // nr zamówienia
+        odczyt = new Scanner(System.in);
+        rolka.cust_order = odczyt.nextLine();
+        System.out.println("Generowanie własnego REEL ID (Cust. Order "); // własny numer rolki
+        ran = generowanie(12, ran);
+        rolka.reel_id = ran;   // generowanie randomowej/kolejnej  własnej wartości REEL ID np. pierwsze dwa znaki elementu i liczba 
+
+        System.out.println(rolka.part_id);
+        System.out.println(rolka.reel_id);
+        return rolka;
+    }
+
+    static void metoda1(Rolka rolka) {// metoda testowa
+
+        System.out.println("Ta metoda nic nie zwraca, ale wyświetla ten tekst");
+        System.out.println();
+        System.out.println(rolka.reel_id);
+        //   System.out.println(rolka.cust_order);
+    }
+
+    static void kodykreskowe(Rolka rolka) {// modyfikacja do pobierania wartości z sql i zamiana na kody kreskowe
+        try {
+
+            Barcode barcode = BarcodeFactory.createCode128A(rolka.reel_id); // pobieranie dodadkowych wartosc lot reel id i part_id 
+            Barcode barcode1 = BarcodeFactory.createCode128A(rolka.lot_id);
+            barcode1.setBarWidth(4);
+            barcode1.setBarHeight(7);
+            Barcode barcode2 = BarcodeFactory.createCode128A(rolka.part_id);
+
+            File imgFile1 = new File("img0.png"); //tworzenie pliku
+            File imgFile2 = new File("img1.png");
+            File imgFile3 = new File("img2.png");
+
+            //Write the bar code to PNG file
+            BarcodeImageHandler.savePNG(barcode, imgFile1);// zapisywanie kodów
+            BarcodeImageHandler.savePNG(barcode1, imgFile2);
+            BarcodeImageHandler.savePNG(barcode2, imgFile3);
+        } catch (Exception e) {
+            System.out.println("Jebac leszczy");
+        }
+
+    }
+
+    /**
+     * @param args the command line arguments
+     * @throws java.io.IOException
+     */
+    public static void main(String[] args) throws java.io.IOException {
+
+        Connection conn = null;
+        Statement stmt = null;
+        //otwieranie połącznia
+        conn = Baza.utworzPolaczenie();
+        //tworzenie tabeli
+        stmt = Baza.utworzStatement(conn);
+        Baza.utworzTabele(stmt);
+
+        boolean koniec = true;
+        while (koniec == true) {
+            System.out.println("Co chcesz zrobić?");
+            System.out.println("1 - dodaj element \n 2 - Drukuj \n 3 - wyświetl dane o rolce (reel_id) \n  4 - znajdź ilość \n 5 - zmień ilość \n 6 - usuń element \n  7 - dodaj temat \n 8 - podaj półke \n 9 - koniec \n 10 -wyświetl wszystko \n 11-dodawanie wartosci elementu do bazy mpn \n 12 - usuwanie elementu z bazy mpn");
+            int zadanie;
+            Scanner odczyt = new Scanner(System.in);
+            zadanie = odczyt.nextInt();
+            switch (zadanie) {
+                case 1:
+                    Rolka rolka;
+                    rolka = dodawanie(len, ran, stmt);
+                    Baza.wstawRolke(stmt, rolka);
+                    break;
+                case 2:
+
+                    System.out.println("Podaj reel_id");
+                    odczyt = new Scanner(System.in);
+                    String reel_id = odczyt.nextLine();
+                    kodykreskowe(Baza.przekazdane(stmt, reel_id));
+                    drukowanie();
+                    break;
+                case 3:
+                    System.out.println("Na podstawie jakiej danej \n reel_id, lot_id, MPN_id, part_id, ilosc, cust_order, komentarz?");
+                    odczyt = new Scanner(System.in);
+                    String kolumna = odczyt.nextLine();
+                    System.out.println("Wpisz Daną z Rolki");
+                    odczyt = new Scanner(System.in);
+                    String wartosc = odczyt.nextLine();
+                    Baza.wyswietlrolke(Baza.znajdzRolki(stmt, kolumna, wartosc));
+                    break;
+                case 4:
+                    System.out.println("Na podstawie jakiej danej? \n reel_id, MPN_id, part_id");
+                    odczyt = new Scanner(System.in);
+                    kolumna = odczyt.nextLine();
+                    System.out.println("Wpisz Daną z Rolki");
+                    odczyt = new Scanner(System.in);
+                    wartosc = odczyt.nextLine();
+                    Baza.znajdzilosc(Baza.znajdzRolki(stmt, kolumna, wartosc));
+                    break;
+                case 5:
+                    System.out.println("Podaj reel_id");
+                    odczyt = new Scanner(System.in);
+                    reel_id = odczyt.nextLine();
+                    System.out.println("Podaj ilość");
+                    odczyt = new Scanner(System.in);
+                    int wartosc1 = odczyt.nextInt();
+                    Baza.zmienIlosc(stmt, reel_id, wartosc1);
+                    break;
+                case 6:
+                    System.out.println("Podaj reel_id");
+                    odczyt = new Scanner(System.in);
+                    wartosc = odczyt.nextLine();
+                    Baza.usunRolke(stmt, wartosc);
+                    break;
+                case 7:
+                    System.out.println("Podaj reel_id");
+                    odczyt = new Scanner(System.in);
+                    reel_id = odczyt.nextLine();
+                    System.out.println("Wpisz komentarz");
+                    odczyt = new Scanner(System.in);
+                    wartosc = odczyt.nextLine();
+                    Baza.zmienKomentarz(stmt, reel_id, wartosc);
+                    break;
+                case 8:
+                    System.out.println("Podaj reel_id");
+                    odczyt = new Scanner(System.in);
+                    reel_id = odczyt.nextLine();
+                    System.out.println("Podaj nr półki");
+                    odczyt = new Scanner(System.in);
+                    wartosc1 = odczyt.nextInt();
+                    Baza.zmienpolke(stmt, reel_id, wartosc1);
+                    break;
+                case 9:
+                    koniec = false;
+                    break;
+                case 10:
+                    Baza.wyswietlWszystko(stmt);
+                    break;
+                case 11:
+                    dodawanieElementu(stmt);
+                    break;
+                case 12:
+                    System.out.println("Podaj MPN_id");
+                    odczyt = new Scanner(System.in);
+                    wartosc = odczyt.nextLine();
+                    Baza.usunelement(stmt, wartosc);
+
+            }
+
+        }
+        System.out.println("Koniec programu");
+
+    }
+
+}

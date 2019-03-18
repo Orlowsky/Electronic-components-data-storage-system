@@ -1,0 +1,233 @@
+﻿/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package magazyn;
+
+import java.sql.*;
+
+/**
+ *
+ * @author User
+ */
+public class Baza {
+// wykonuje polecenie aktualizacji bazy sql używając statementu i polecenia, łapie potencjalne błędy z sql 
+    public static void wykonajUpdate(Statement stmt, String sql) {
+        try {
+            stmt.executeUpdate(sql);
+        } catch (Exception e) {
+            System.out.println("Obiekt istnieje");
+          //  e.printStackTrace();   // w razie czego wykonuje debug
+        }
+    }
+// tworzy obiekt typu  statement który wykorzystujemy do wykonywania poleceń bazy sql , przekazywanie włąściwej treści polecenia
+    public static Statement utworzStatement(Connection conn) {
+        Statement stmt = null;
+        try {
+            stmt = conn.createStatement();
+        } catch (Exception e) {
+            System.out.println("Błąd połącznia");
+        }
+        return stmt;
+    }
+
+    public static Connection utworzPolaczenie() {
+        try {
+            Connection conn = null;
+            //tutaj rejestruje Driver dla JDBC żeby wiedział co i jak ma robić
+            Class.forName("org.h2.Driver");
+            //tutaj się łączy do bazy danych , dalej user i hasło
+            //jak nie ma bazy albo user/pass to tworzy
+            conn = DriverManager.getConnection("jdbc:h2:C:\\Users\\User\\Desktop\\Baza", "user", "pass");
+            return conn;
+        } catch (Exception e) {
+            System.out.println("Brak połączenia");
+            return null;
+        }
+    }
+
+    public static void utworzTabele(Statement stmt) {   
+        //tutej deklaruje string z poleceniem
+        //deklaracja tabeli i podziału wartosci 
+        String sql = "CREATE TABLE   MAGAZYN "
+                + "(reel_id VARCHAR(255) , "
+                + " lot_id VARCHAR(255), "
+                + " MPN_id VARCHAR(255), "
+                + " part_id VARCHAR(255), "
+                + " ilosc INTEGER not NULL, "
+                + " cust_order VARCHAR(255),"
+                + " komentarz VARCHAR(255),"
+                + " nr_polki INTEGER not NULL,"
+                + " PRIMARY KEY ( reel_id ))";
+        //tutaj jest try bo tabela może już istnieć
+        wykonajUpdate(stmt, sql);
+        String sql1 = "CREATE TABLE   ELEMENTY "
+                + "(part_id VARCHAR(255) ,"
+                + "MPN_id VARCHAR(255) ,"
+                + "PRIMARY KEY (MPN_id))";
+        wykonajUpdate(stmt,sql1);
+ 
+                
+    }
+    
+    public static void wstawelement(Statement stmt, String partid, String mpn)
+    {                               //oddzielne dodawanie do bazy MPN/Part_ID
+        String sql;
+        sql = "INSERT INTO Elementy "
+                + "VALUES ('" + partid + "','"+ mpn + "')";
+        wykonajUpdate(stmt, sql);
+    }
+    public static void wstawelement(Statement stmt, Rolka rolka) 
+    {                              // wprowadzenie wartości z Rolki do tablicy Elementy z funkcji dodawanie
+        String sql;
+        sql = "INSERT INTO Elementy "
+                + "VALUES ('" + rolka.part_id + "','"+ rolka.MPN_id + "')"; 
+        wykonajUpdate(stmt, sql);   //wprowadznie i zapisanie zmian dla tablicy Elementów
+    }
+    public static void usunelement(Statement stmt, String wartosc) { // usuwa rolke ktora uswa na podstawie reel_id
+        String sql;
+        sql = "DELETE FROM Elementy WHERE MPN_id = '" + wartosc + "'";
+        wykonajUpdate(stmt, sql);
+
+    }
+    
+    public static void wstawRolke(Statement stmt, Rolka rolka) { //wstawia wiersz w tabeli z wartosciami odpowiadajacymi obiektowi typu rolka , funkcja dodawanie
+        String sql;
+        sql = "INSERT INTO Magazyn "
+                + "VALUES ('" + rolka.reel_id + "','" + rolka.lot_id + "','" + rolka.MPN_id + "','" + rolka.part_id + "'," + rolka.qt + ",'" + rolka.cust_order + "',' ',0)"; 
+        wykonajUpdate(stmt, sql);
+    }
+
+    public static ResultSet znajdzelementy(Statement stmt, String mpn){    
+        String sql;                           //funkcja zwraca wartość Result Set dla wybranej MPN_id
+        ResultSet rs = null;
+        sql = "SELECT * FROM Elementy WHERE MPN_id = '" + mpn + "'";  // deklarujemy wartość dla kolumny MPN_id jaką ma zwracać 
+        try{                                
+            rs = stmt.executeQuery(sql);   //wykonuje zapytanie dla naszej pobranej deklaracji zwracając rs
+        }catch (Exception e){
+            System.out.print("Błąd SQL");
+        }
+        return rs;
+    }
+    
+    public static ResultSet znajdzRolki(Statement stmt, String kolumna, String wartosc) {   //podajemy kolumne i wartosc jaka ma zawierac i zwraca result set 
+        String sql;
+        ResultSet rs = null;
+        System.out.print("ELEMENTY W KTÓRYCH " + kolumna + " = " + wartosc + "\n");
+        sql = "SELECT * FROM Magazyn WHERE " + kolumna + " = '" + wartosc + "'";
+        try {
+            rs = stmt.executeQuery(sql);
+        } catch (Exception e) {
+            System.out.println("Błąd SQL");
+        }
+        return rs;
+    }
+
+    public static void wyswietlWszystko(Statement stmt) { //wyswietla wszystkie wiersze z tabeli 
+        String sql;
+        ResultSet rs = null;
+        System.out.print("WSZYSTKIE ROLKI\n");
+        sql = "SELECT * FROM Magazyn";
+        try {
+            rs = stmt.executeQuery(sql);
+        } catch (Exception e) {
+            System.out.println("Błąd SQL");
+        }
+        wyswietlrolke(rs);
+        
+        System.out.print("WSZYSTKIE ELEMENTEY\n");
+        sql = "SELECT * FROM Elementy";
+        try {
+            rs = stmt.executeQuery(sql);
+        }catch(Exception e){
+            System.out.println("Błąd SQL");
+        }
+        wyswietlelement(rs);
+    }
+    
+    public static void wyswietlelement(ResultSet rs){ // wyświetla element z tablicy ELEMENTY(MPN/Part ID)
+        try{
+            while(rs.next()){
+                System.out.println("MPN id: "+rs.getString("MPN_id"));
+                System.out.println("part id: "+rs.getString("part_id"));
+                System.out.println("");
+            }
+        }catch(Exception e){
+            System.out.println("Nieprawidlowy ResultSet");
+        }
+    }
+    
+    public static void wyswietlrolke(ResultSet rs) {  // wyświetla to co było w result set, wyswietla kolejne zbiory wyników
+        try {
+            while (rs.next()) {
+                System.out.println("reel_id: "+rs.getString("reel_id"));
+                System.out.println("lot_id: "+rs.getString("lot_id"));
+                System.out.println("MPN_id: "+rs.getString("MPN_id"));
+                System.out.println("part_id: "+rs.getString("part_id"));
+                System.out.println("ilosc: "+rs.getInt("ilosc"));
+                System.out.println("cust_order: "+rs.getString("cust_order"));
+                System.out.println("komentarz: "+rs.getString("komentarz"));
+                System.out.println("nr_półki: "+rs.getInt("nr_polki"));
+                System.out.println("\n");
+            }
+        } catch (Exception e) {
+            System.out.println("Nieprawidłowy resultset");
+        }
+
+    }
+
+    public static int znajdzilosc(ResultSet rs) {  //korzysta z result set i sumuje wartosci w kolumnie ilosc 
+        try {
+            int ilosc = 0;
+            while (rs.next()) {
+                ilosc = ilosc + (rs.getInt("ilosc"));
+            }
+            System.out.println(ilosc);
+            return ilosc;
+        } catch (Exception e) {
+            System.out.println("Nieprawidłowy resultset");
+            return 0;
+        }
+    }
+
+    public static Rolka przekazdane(Statement stmt, String reel_id) { // przekazuje wartosci do druku 
+        Rolka rolka_p = new Rolka();
+        ResultSet rs = znajdzRolki(stmt, "reel_id", reel_id);
+        try {
+            rs.next();
+            rolka_p.reel_id = rs.getString("reel_id");
+            rolka_p.lot_id = rs.getString("lot_id");
+            rolka_p.part_id = rs.getString("part_id");
+        } catch (Exception e) {
+            System.out.println("Nie przekazuje wartości");
+        }
+        return rolka_p;
+    }
+
+    public static void usunRolke(Statement stmt, String wartosc) { // usuwa rolke ktora uswa na podstawie reel_id
+        String sql;
+        sql = "DELETE FROM Magazyn WHERE reel_id = '" + wartosc + "'";
+        wykonajUpdate(stmt, sql);
+
+    }
+
+    public static void zmienIlosc(Statement stmt, String reelid, int wartosc) {   // zmienia ilość na podstawie podanego reel id
+        String sql;
+        sql = "UPDATE Magazyn SET ilosc = " + wartosc + " WHERE reel_id = '" + reelid + "'";
+        wykonajUpdate(stmt, sql);
+    }
+    
+    public static void zmienpolke(Statement stmt, String reelid, int wartosc) {   //pozwala na dopisanie półki gdize sie znajduje element
+        String sql;
+        sql = "UPDATE Magazyn SET nr_polki = " + wartosc + " WHERE reel_id = '" + reelid + "'";
+        wykonajUpdate(stmt, sql);
+    }
+
+    public static void zmienKomentarz(Statement stmt, String reelid, String wartosc) { // dodaje komentarz np nr tematu potem można uzyc do znajdowania wszystkich elementów z danego działu 
+        String sql;
+        sql = "UPDATE Magazyn SET komentarz = '" + wartosc +  "' WHERE reel_id = '" + reelid + "'";
+        wykonajUpdate(stmt, sql); // dlaczego nie działa koment ?
+    }
+
+}

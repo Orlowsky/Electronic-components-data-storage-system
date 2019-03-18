@@ -1,0 +1,28 @@
+﻿/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package magazyn;
+
+/**
+ *
+ * @author User
+ * 
+ * 
+ * 
+ */
+// utworzenie obiektu rolka i jego zawartość
+public class Rolka {
+    String lot_id;
+    String part_id;
+    String MPN_id;
+    int qt;
+    String cust_order;
+    String reel_id;
+    
+    
+}
+
+
+

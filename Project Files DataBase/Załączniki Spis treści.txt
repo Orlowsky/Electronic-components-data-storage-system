@@ -1,0 +1,9 @@
+Spis za³¹czników
+1.	Kod g³ównego programu „Magazyn.java”
+2.	Kod Bazy danych „Baza.java”
+3.	Kod Modu³u drukowania „Druk.java”
+4.	Kod obiektu Rolka „Rolka.java”
+5.	Biblioteka „H2 Database” dla bazy danych pod nazw¹ „h2-1.4.193”
+6.	Biblioteka „Barbecue” dla kodów kreskowych pod nazw¹” barbecue-1.5-beta1”
+7.	Baza danych Magazyn(Przyk³adowa) i  Baza danych Elementów MPN/Part ID(Przyk³adowa) jako „Baza”(wewn¹trz „Baza.mv” i „Baza.trace”)
+

@@ -1,0 +1,46 @@
+﻿package magazyn;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.io.File;
+import java.awt.print.*;
+import java.awt.print.PrinterJob;
+
+
+public class Druk implements Printable{
+    // print mówi, żeby Graphics  renderował stronę o wskazanym PageFormacie (to nam okresla rozmiar strony i marginesy), która ma dany Index (w sensie number strony)
+    //  te parametry są podawane przez PrintJob (który daje nam okienko z konfiguracją drukowania i tak dalej)
+    public int print (Graphics g, PageFormat pf, int Index){
+        // chcemy drukować tylko jedną strone więc ograniczamy Index, jak będzie większy niż 0 to powiemy PrinterJobowi, że hehe przecież niema takiej strony
+        if (Index>0){return NO_SUCH_PAGE;}
+        //Renderowanie zawartości strony
+        //Castujemy Graphics jako Graphics2D żeby mieć większe możliwości
+        Graphics2D g2d = (Graphics2D) g;
+        //Tutaj zmieniamy początek układu współrzędnych żeby był w lewym górnym rogu
+        //współrzędne tutaj działają tak jak z reguły w grafice nie tak jak w układzie Kartezjańskim, tj. oś Y w doł jest dodatnia.
+        g2d.translate (pf.getImageableX (), pf.getImageableY ());
+        //Tutaj się wczytuje obrazek jako BufferedImage
+        BufferedImage img1 = null;
+        BufferedImage img2 = null;
+        BufferedImage img3 = null;
+        try {
+            img1 = ImageIO.read(new File("C:\\Users\\User\\Desktop\\Zadanko\\Magazyn\\img0.png"));
+            img2 = ImageIO.read(new File("C:\\Users\\User\\Desktop\\Zadanko\\Magazyn\\img1.png"));
+            img3 = ImageIO.read(new File("C:\\Users\\User\\Desktop\\Zadanko\\Magazyn\\img2.png"));
+        } catch (Exception e) {
+            //jakby nie było pliku albo coś innego się stało(inny plik niż obrazek)
+            e.printStackTrace();
+        }
+        //tutej wyrzuca trzy obrazki jeden pod drugim argumenty to są współrzędne, rozmiar i imageObserver 
+        g2d.drawImage(img1,0,0, 220, 24,null);
+        g2d.drawImage(img2,0,25, 220, 24,null);
+        g2d.drawImage(img3,0,50, 220, 24,null);
+
+        //No i po wyrenderowaniu wysyłamy PrinterJobowi sygnał, że strona jest i może se ją drukować
+        return (PAGE_EXISTS);
+    }
+
+}
